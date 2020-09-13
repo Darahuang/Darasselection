@@ -1,0 +1,31 @@
+.cart-image{
+    min-width: 110px;
+    height: 110px;
+    background-position: center center;
+    background-size: cover;
+}
+.cart-control{
+    width: 145px;
+}
+@media(max-width:768px){
+   .cart-border ,.price-border{
+    border-bottom: 1px solid theme-color("accent");
+}
+}
+
+.order-box{
+    background-color: theme-color("lovely");
+    color:white;
+    @media (max-width:768px) {
+        background-color: white;
+        color:theme-color("lovely");
+    };
+    h3{
+    @media (max-width:768px) {
+        background-color:theme-color("accent");
+        color:theme-color("lovely");
+      };
+    }
+}
+
+

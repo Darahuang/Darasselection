@@ -1,0 +1,57 @@
+.process-step{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.process-step::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color:theme-color("accent");
+    
+}
+.process-step.success::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: theme-color("lovely");
+}
+.step-icon{
+    width: 20px;
+    height: 20px;
+    border:1px solid theme-color("accent");
+    border-radius: 20px;
+    background-color:theme-color("lovely");
+    z-index: 1;  
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.step-icon.active::after{
+    content: "";
+    height: 14px;
+    width: 14px;
+    display: block;
+    background-color:theme-color("accent");
+    border-radius: 20px;  
+}
+.step-icon.done{
+    font-size: 1rem;
+    background-color:theme-color("accent");
+    color: theme-color("lovely");
+}
+.step-icon.success{
+    font-size: 1rem;
+    background-color:theme-color("lovely");
+    color:theme-color("accent");
+}

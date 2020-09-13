@@ -1,0 +1,35 @@
+.item-card{
+    display: flex;
+    flex-direction: column;
+}
+.item-image{
+    height: 315px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.item-tag{
+    position: absolute;
+    left:20px;
+    top:0;
+    writing-mode: vertical-rl;
+    background-color:theme-color("primary");//rgb(238, 138, 129);
+    padding: 15px 10px;
+    color: theme-color("detail");//rgb(221, 245, 253);
+    letter-spacing: 3px;
+}
+.item-heart-icon{
+    position: absolute;
+    top: 20px;
+    right: 22px;
+}
+.item-info{
+    padding: 15px 0;
+    font-size: 1.25rem;
+}
+.item-border-right{
+    border-right: 1px solid theme-color("detail");
+}
+.item-border{
+    border: 1px solid theme-color("detail");
+}
